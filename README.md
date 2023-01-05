@@ -4,9 +4,8 @@ File desc:
 
 1. `public.asc` is the public key
 2. `hello.txt` is the plaintext file
-3. `hello.txt.asc` is the encrypted data
 
-Then ,we try to use `public.asc` to decrypt the `hello.txt.asc` 
+Then ,we try to use `public.asc` to encrypt the `hello.txt` 
 
 import public key
 
@@ -14,15 +13,13 @@ import public key
 gpg --import public.asc
 ```
 
-Decrypt use public key
+encrypt use public key
 
 ```shell
-gpg -o decrypted-hello.txt --decrypt  --recipient B4917517FB521BF2 hello.txt.asc
+gpg -o hello.txt.asc --encrypt  --recipient B4917517FB521BF2 hello.txt
 ```
 
-check
+`B4917517FB521BF2` is the key id
 
-```shell
-diff hello.txt decrypted-hello.txt
-```
+You can not decrypt `hello.txt.asc`  unless you have the private key。And, `hello.txt.asc` will change every time as it contains the timestamp.
 
