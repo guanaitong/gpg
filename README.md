@@ -5,7 +5,7 @@ File desc:
 1. `public.asc` is the public key
 2. `hello.txt` is the plaintext file
 
-Then ,we try to use `public.asc` to encrypt the `hello.txt` 
+Then, we try to use `public.asc` to encrypt the `hello.txt` .
 
 import public key:
 
