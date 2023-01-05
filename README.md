@@ -27,7 +27,7 @@ For Test : You can send us a encrypted file, and we check if it can decrypt by o
 
 
 
-## Java application
+## Java application demo
 
 you can run `com.ciicgat.Main` 
 
