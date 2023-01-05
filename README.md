@@ -3,7 +3,7 @@
 File desc:
 
 1. `public.asc` is the public key
-2. `hello.txt` is the original file
+2. `hello.txt` is the plaintext file
 3. `hello.txt.asc` is the encrypted data
 
 Then ,we try to use `public.asc` to decrypt the `hello.txt.asc` 
