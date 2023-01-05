@@ -23,7 +23,7 @@ gpg -o hello.txt.asc --encrypt  --recipient B4917517FB521BF2 hello.txt
 
 You can not decrypt `hello.txt.asc`  unless you have the private key, and  `hello.txt.asc` will change every time as it contains the timestamp.
 
-For Test : You can send us an encrypted file, and we check that  it can decrypt by our private key successfully .
+For Test : You can send us an encrypted file, and we check that  it can be decrypted by our private key .
 
 
 
