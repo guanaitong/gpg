@@ -7,20 +7,20 @@ File desc:
 
 Then ,we try to use `public.asc` to encrypt the `hello.txt` 
 
-import public key
+import public key:
 
 ```shell
 gpg --import public.asc
 ```
 
-encrypt use public key
+encrypt use the public key:
 
 ```shell
 gpg -o hello.txt.asc --encrypt  --recipient B4917517FB521BF2 hello.txt
 ```
 
-`B4917517FB521BF2` is the key id
+`B4917517FB521BF2` is the key id.
 
-You can not decrypt `hello.txt.asc`  unless you have the private key。And, `hello.txt.asc` will change every time as it contains the timestamp.
+You can not decrypt `hello.txt.asc`  unless you have the private key, and  `hello.txt.asc` will change every time as it contains the timestamp.
 
 For Test : You can send us a encrypted file, and we check if it can decrypt by our private key.
