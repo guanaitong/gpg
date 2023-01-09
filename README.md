@@ -16,10 +16,10 @@ gpg --import public.asc
 encrypt use the public key:
 
 ```shell
-gpg -o hello.txt.asc --encrypt  --recipient B4917517FB521BF2 hello.txt
+gpg -o hello.txt.asc --encrypt  --recipient 4B62373BF3074C4A hello.txt
 ```
 
-`B4917517FB521BF2` is the key id.
+`4B62373BF3074C4A` is the key id.
 
 You can not decrypt `hello.txt.asc`  unless you have the private key, and  `hello.txt.asc` will change every time as it contains the timestamp.
 
